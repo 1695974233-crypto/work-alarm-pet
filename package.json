@@ -1,0 +1,30 @@
+{
+  "name": "work-alarm-pet",
+  "version": "0.1.0",
+  "description": "工作闹钟 — 常驻桌面的任务时间伙伴",
+  "main": "src/main.js",
+  "private": true,
+  "author": "Work Alarm",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/engine.test.js",
+    "test:desktop": "node tests/desktop.cjs",
+    "build:mac": "electron-builder --mac dir",
+    "build:win": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "42.0.1",
+    "electron-builder": "26.0.12",
+    "playwright-core": "1.58.2"
+  },
+  "build": {
+    "appId": "local.work-alarm.pet",
+    "productName": "工作闹钟",
+    "directories": {"output": "dist"},
+    "files": ["src/**/*", "LICENSE", "THIRD_PARTY_NOTICES.md", "package.json"],
+    "mac": {"target": "dir", "icon": "build/icon.png", "category": "public.app-category.productivity", "identity": null},
+    "win": {"target": "nsis"},
+    "nsis": {"oneClick": false, "allowToChangeInstallationDirectory": true}
+  }
+}

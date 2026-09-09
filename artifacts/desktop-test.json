@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "tests": [
+    "dashboard",
+    "confirmation preview",
+    "task switching",
+    "time tracking",
+    "capacity risk",
+    "deadline confirmation",
+    "no-focus-steal",
+    "persistence"
+  ],
+  "syntheticDrag": {
+    "before": {
+      "x": 1200,
+      "y": 621,
+      "width": 252,
+      "height": 246
+    },
+    "after": {
+      "x": 660,
+      "y": 306,
+      "width": 252,
+      "height": 246
+    },
+    "passed": true
+  },
+  "focus": {
+    "tested": true,
+    "before": "访达",
+    "after": "访达",
+    "visible": true,
+    "focused": false,
+    "alwaysOnTop": true
+  },
+  "rendererErrors": [],
+  "checkedAt": "2026-09-09T16:54:15.528Z"
+}
